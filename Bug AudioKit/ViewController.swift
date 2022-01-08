@@ -9,11 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let audioEngine = AudioEngine()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func play(sender: UIButton) {
+        let url = Bundle.main.url(forResource: "fan_default", withExtension: "mp3")!
+        audioEngine.playSound(url: url)
+    }
 
 }
 

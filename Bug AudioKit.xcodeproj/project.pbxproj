@@ -13,6 +13,9 @@
 		83B395A3278983BD00D7BC8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B395A1278983BD00D7BC8D /* Main.storyboard */; };
 		83B395A5278983BF00D7BC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B395A4278983BF00D7BC8D /* Assets.xcassets */; };
 		83B395A8278983BF00D7BC8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B395A6278983BF00D7BC8D /* LaunchScreen.storyboard */; };
+		83B395B1278983D500D7BC8D /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 83B395B0278983D500D7BC8D /* AudioKit */; };
+		83B395B3278983EF00D7BC8D /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B395B2278983EF00D7BC8D /* AudioEngine.swift */; };
+		83B395B52789842100D7BC8D /* fan_default.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83B395B42789842100D7BC8D /* fan_default.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		83B395A4278983BF00D7BC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83B395A7278983BF00D7BC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83B395A9278983BF00D7BC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B395B2278983EF00D7BC8D /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		83B395B42789842100D7BC8D /* fan_default.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fan_default.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B395B1278983D500D7BC8D /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 		83B3958F278983BD00D7BC8D = {
 			isa = PBXGroup;
 			children = (
+				83B395B2278983EF00D7BC8D /* AudioEngine.swift */,
 				83B3959A278983BD00D7BC8D /* Bug AudioKit */,
 				83B39599278983BD00D7BC8D /* Products */,
 			);
@@ -62,6 +69,7 @@
 				83B395A1278983BD00D7BC8D /* Main.storyboard */,
 				83B395A4278983BF00D7BC8D /* Assets.xcassets */,
 				83B395A6278983BF00D7BC8D /* LaunchScreen.storyboard */,
+				83B395B42789842100D7BC8D /* fan_default.mp3 */,
 				83B395A9278983BF00D7BC8D /* Info.plist */,
 			);
 			path = "Bug AudioKit";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "Bug AudioKit";
+			packageProductDependencies = (
+				83B395B0278983D500D7BC8D /* AudioKit */,
+			);
 			productName = "Bug AudioKit";
 			productReference = 83B39598278983BD00D7BC8D /* Bug AudioKit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 83B3958F278983BD00D7BC8D;
+			packageReferences = (
+				83B395AF278983D500D7BC8D /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
 			productRefGroup = 83B39599278983BD00D7BC8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +141,7 @@
 			files = (
 				83B395A8278983BF00D7BC8D /* LaunchScreen.storyboard in Resources */,
 				83B395A5278983BF00D7BC8D /* Assets.xcassets in Resources */,
+				83B395B52789842100D7BC8D /* fan_default.mp3 in Resources */,
 				83B395A3278983BD00D7BC8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B395B3278983EF00D7BC8D /* AudioEngine.swift in Sources */,
 				83B395A0278983BD00D7BC8D /* ViewController.swift in Sources */,
 				83B3959C278983BD00D7BC8D /* AppDelegate.swift in Sources */,
 				83B3959E278983BD00D7BC8D /* SceneDelegate.swift in Sources */,
@@ -217,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -360,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83B395AF278983D500D7BC8D /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83B395B0278983D500D7BC8D /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83B395AF278983D500D7BC8D /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83B39590278983BD00D7BC8D /* Project object */;
 }
